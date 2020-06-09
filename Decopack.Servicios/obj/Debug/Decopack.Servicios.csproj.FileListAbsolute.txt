@@ -1,0 +1,5 @@
+C:\Users\elmus\source\repos\Decopack\Decopack.Servicios\bin\Debug\Decopack.Servicios.dll
+C:\Users\elmus\source\repos\Decopack\Decopack.Servicios\bin\Debug\Decopack.Servicios.pdb
+C:\Users\elmus\source\repos\Decopack\Decopack.Servicios\obj\Debug\Decopack.Servicios.csproj.CoreCompileInputs.cache
+C:\Users\elmus\source\repos\Decopack\Decopack.Servicios\obj\Debug\Decopack.Servicios.dll
+C:\Users\elmus\source\repos\Decopack\Decopack.Servicios\obj\Debug\Decopack.Servicios.pdb
