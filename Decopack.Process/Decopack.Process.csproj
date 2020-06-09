@@ -62,6 +62,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MediaType.cs" />
+    <Compile Include="ProcessComponent.cs" />
+    <Compile Include="ProductoProcess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -77,13 +80,9 @@
       <Project>{080bd10b-b1cf-47f4-90f7-aeb8319e6444}</Project>
       <Name>Decopack.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Decopack.IoC\Decopack.IoC.csproj">
-      <Project>{d8bee8dd-9054-4eaa-8b06-a9bc36527969}</Project>
-      <Name>Decopack.IoC</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Decopack.Services\Decopack.Services.csproj">
-      <Project>{ca744499-d434-42c4-972e-0b3d67968df2}</Project>
-      <Name>Decopack.Services</Name>
+    <ProjectReference Include="..\Decopack.Services.Contracts\Decopack.Services.Contracts.csproj">
+      <Project>{64f6e8cd-dfca-4f94-930e-5a34bd294669}</Project>
+      <Name>Decopack.Services.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

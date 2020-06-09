@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,21 +53,13 @@
       <Project>{f5df9b8f-bf81-4835-a481-618424700815}</Project>
       <Name>Decopack.EE</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Decopack.Framework\Decopack.Framework.csproj">
-      <Project>{080bd10b-b1cf-47f4-90f7-aeb8319e6444}</Project>
-      <Name>Decopack.Framework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Decopack.IoC\Decopack.IoC.csproj">
-      <Project>{d8bee8dd-9054-4eaa-8b06-a9bc36527969}</Project>
-      <Name>Decopack.IoC</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Decopack.Services.Contracts\Decopack.Services.Contracts.csproj">
       <Project>{64f6e8cd-dfca-4f94-930e-5a34bd294669}</Project>
       <Name>Decopack.Services.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Decopack.Services.Http\Decopack.Services.Http.csproj">
-      <Project>{f71fa388-59e0-4ee9-9945-72b149dca8ce}</Project>
-      <Name>Decopack.Services.Http</Name>
+    <ProjectReference Include="..\Decopack.Servicios\Decopack.Servicios.csproj">
+      <Project>{eba34223-0de2-457c-9a1b-9b5ebfb98c22}</Project>
+      <Name>Decopack.Servicios</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

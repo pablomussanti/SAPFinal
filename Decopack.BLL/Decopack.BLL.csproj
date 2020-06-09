@@ -42,9 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraBLL.cs" />
+    <Compile Include="ProductoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Decopack.DAL\Decopack.DAL.csproj">
+      <Project>{096E6C3B-5B31-4F72-A653-2CA205D2FCC3}</Project>
+      <Name>Decopack.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Decopack.EE\Decopack.EE.csproj">
       <Project>{f5df9b8f-bf81-4835-a481-618424700815}</Project>
       <Name>Decopack.EE</Name>
@@ -56,6 +62,10 @@
     <ProjectReference Include="..\Decopack.IoC\Decopack.IoC.csproj">
       <Project>{d8bee8dd-9054-4eaa-8b06-a9bc36527969}</Project>
       <Name>Decopack.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.Servicios\Decopack.Servicios.csproj">
+      <Project>{EBA34223-0DE2-457C-9A1B-9B5EBFB98C22}</Project>
+      <Name>Decopack.Servicios</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

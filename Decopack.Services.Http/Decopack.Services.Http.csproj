@@ -53,12 +53,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProductoServiceHTTP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Decopack.BLL\Decopack.BLL.csproj">
+      <Project>{9a13db57-3d23-4b0b-b528-e24fcd446f82}</Project>
+      <Name>Decopack.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Decopack.EE\Decopack.EE.csproj">
       <Project>{f5df9b8f-bf81-4835-a481-618424700815}</Project>
       <Name>Decopack.EE</Name>
@@ -70,6 +75,10 @@
     <ProjectReference Include="..\Decopack.IoC\Decopack.IoC.csproj">
       <Project>{d8bee8dd-9054-4eaa-8b06-a9bc36527969}</Project>
       <Name>Decopack.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.Services.Contracts\Decopack.Services.Contracts.csproj">
+      <Project>{64F6E8CD-DFCA-4F94-930E-5A34BD294669}</Project>
+      <Name>Decopack.Services.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
