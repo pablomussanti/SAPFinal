@@ -12,11 +12,11 @@ namespace Decopack.BLL
     {
         public Bitacora Create(Bitacora Bitacora)
         {
-            Bitacora result = default(Bitacora);
+           
             var BitacoraDAL = new BitacoraDAL();
 
-            result = BitacoraDAL.Create(Bitacora);
-            return result;
+            BitacoraDAL.Create(Bitacora);
+            return null;
         }
 
         public List<Bitacora> ListarTodos()

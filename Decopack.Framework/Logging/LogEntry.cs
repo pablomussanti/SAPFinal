@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Safari.Framework.Logging
+namespace Decopack.Framework.Logging
 {
     public partial class LogEntry
     {

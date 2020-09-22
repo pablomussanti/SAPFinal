@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Decopack.Services.Http</RootNamespace>
     <AssemblyName>Decopack.Services.Http</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -71,10 +73,6 @@
     <ProjectReference Include="..\Decopack.Framework\Decopack.Framework.csproj">
       <Project>{080bd10b-b1cf-47f4-90f7-aeb8319e6444}</Project>
       <Name>Decopack.Framework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Decopack.IoC\Decopack.IoC.csproj">
-      <Project>{d8bee8dd-9054-4eaa-8b06-a9bc36527969}</Project>
-      <Name>Decopack.IoC</Name>
     </ProjectReference>
     <ProjectReference Include="..\Decopack.Services.Contracts\Decopack.Services.Contracts.csproj">
       <Project>{64F6E8CD-DFCA-4F94-930E-5A34BD294669}</Project>

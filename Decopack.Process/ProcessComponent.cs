@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web;
 
-namespace Safari.UI.Process
+namespace Decopack.UI.Process
 {
     /// <summary>
     /// Base class for UI Controllers (not the ASP.NET MVC Controllers).

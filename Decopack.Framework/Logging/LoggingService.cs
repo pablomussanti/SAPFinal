@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Safari.Framework.Logging
+namespace Decopack.Framework.Logging
 {
     /// <summary>
     /// A class for logging errors to a text file. Works in Partial Trust.

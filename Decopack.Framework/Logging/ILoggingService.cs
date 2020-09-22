@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Safari.Framework.Logging
+namespace Decopack.Framework.Logging
 {
     public partial interface ILoggingService
     {

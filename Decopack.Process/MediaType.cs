@@ -1,4 +1,4 @@
-﻿namespace Safari.UI.Process
+﻿namespace Decopack.UI.Process
 {
     public struct MediaType
     {

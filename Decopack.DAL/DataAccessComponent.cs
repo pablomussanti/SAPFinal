@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Text.RegularExpressions;
 using Microsoft.Practices.EnterpriseLibrary.Data;
 
-namespace Safari.Data
+namespace Decopack.Data
 {
     public abstract class DataAccessComponent
     {

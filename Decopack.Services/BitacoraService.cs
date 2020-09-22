@@ -19,8 +19,8 @@ namespace Decopack.Services
 
         public Bitacora Create(Bitacora Bitacora)
         {
-            BitacoraBLL EspecieComponent = new BitacoraBLL();
-            return EspecieComponent.Create(Bitacora);
+            BitacoraBLL BitacoraComponent = new BitacoraBLL();
+            return BitacoraComponent.Create(Bitacora);
         }
 
         public bool Edit(Bitacora Bitacora)

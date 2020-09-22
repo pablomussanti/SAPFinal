@@ -1,0 +1,71 @@
+﻿
+@model PagedList.IPagedList<Decopack.EE.Producto>
+
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PRODUCTOS</h2>
+
+
+<p>
+    @Html.ActionLink("Crear Nuevo Producto", "Create")
+</p>
+
+@using (Html.BeginForm("Index", "Producto", FormMethod.Get))
+{
+    <p>
+        Buscar por Nombre: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Buscar" />
+    </p>
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Nombre", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            Precio
+        </th>
+        <th>
+           Estado
+        </th>
+        <th>
+            Descripcion
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Activar/Desactivar", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

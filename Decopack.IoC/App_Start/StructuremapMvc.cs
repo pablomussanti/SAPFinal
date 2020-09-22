@@ -19,8 +19,8 @@ using Decopack.IoC.App_Start;
 
 using WebActivatorEx;
 
-[assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
-[assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
+//[assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
+//[assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
 
 namespace Decopack.IoC.App_Start {
 	using System.Web.Mvc;

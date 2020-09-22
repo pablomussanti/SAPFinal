@@ -15,7 +15,11 @@ namespace Decopack.EE
 
         public double Precio { get; set; }
 
-        public Boolean Estado { get; set; }
+        public string Estado { get; set; }
+
+        public string Descripcion { get; set; }
+
+        public string DVH { get; set; }
 
 
     }

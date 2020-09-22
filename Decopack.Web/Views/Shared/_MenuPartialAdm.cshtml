@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+
+
+    if (HttpContext.Current.User.IsInRole("Admin"))
+    {
+<ul class="nav navbar-nav">
+    <li>@Html.ActionLink("Bitacora", "Index", "AdminBitacora", new { area = "Admin" }, null)</li>
+    <li>@Html.ActionLink("Integridad", "Index", "Integridad", new { area = "Admin" }, null)</li>
+</ul>
+    }
+}

@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Decopack.Hosts.Web</RootNamespace>
     <AssemblyName>Decopack.Hosts.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,12 +63,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\HttpServiceTypeResolver.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Decopack.BLL\Decopack.BLL.csproj">
+      <Project>{9a13db57-3d23-4b0b-b528-e24fcd446f82}</Project>
+      <Name>Decopack.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.DAL\Decopack.DAL.csproj">
+      <Project>{096e6c3b-5b31-4f72-a653-2ca205d2fcc3}</Project>
+      <Name>Decopack.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.EE\Decopack.EE.csproj">
+      <Project>{f5df9b8f-bf81-4835-a481-618424700815}</Project>
+      <Name>Decopack.EE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.Process\Decopack.Process.csproj">
+      <Project>{da47dd02-dc1a-4d59-82b2-7a9435b9552c}</Project>
+      <Name>Decopack.Process</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.Services.Contracts\Decopack.Services.Contracts.csproj">
+      <Project>{64f6e8cd-dfca-4f94-930e-5a34bd294669}</Project>
+      <Name>Decopack.Services.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.Services.Http\Decopack.Services.Http.csproj">
+      <Project>{f71fa388-59e0-4ee9-9945-72b149dca8ce}</Project>
+      <Name>Decopack.Services.Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.Services\Decopack.Services.csproj">
+      <Project>{ca744499-d434-42c4-972e-0b3d67968df2}</Project>
+      <Name>Decopack.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decopack.Web\Decopack.Web.csproj">
+      <Project>{7ff56d67-b493-4aeb-8412-fd4382380de9}</Project>
+      <Name>Decopack.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

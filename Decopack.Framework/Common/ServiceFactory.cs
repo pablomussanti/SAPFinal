@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Safari.Framework.Common
+namespace Decopack.Framework.Common
 {
     /// <summary>
     /// ServiceFactory is to replace the API, and an efficient way to get access to any interfaced service

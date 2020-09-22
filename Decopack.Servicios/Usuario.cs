@@ -1,4 +1,5 @@
 ﻿using Decopack.Servicios.Composite;
+using Safari.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,10 @@ using System.Threading.Tasks;
 namespace Decopack.Servicios
 {
 
-    public class Usuario 
+    public class Usuario : IEntity
     {
+
+        public int Id { get; set; }
 
         private string _user;
 

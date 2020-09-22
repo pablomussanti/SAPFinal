@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Safari.Data
+namespace Decopack.Data
 {
     public interface IRepository<TEntity> where TEntity : IEntity
     {                

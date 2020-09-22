@@ -16,6 +16,9 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace Decopack.IoC.DependencyResolution {
+    using Decopack.Framework.Logging;
+    using Decopack.Services;
+    using Decopack.Services.Contracts;
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
 	
@@ -30,6 +33,10 @@ namespace Decopack.IoC.DependencyResolution {
 					scan.With(new ControllerConvention());
                 });
             //For<IExample>().Use<Example>();
+            For<ILoggingService>().Use<LoggingService>();
+            For<IBitacoraService>().Use<BitacoraService>();
+            For<IProductoService>().Use<ProductoService>();
+
         }
 
         #endregion
