@@ -11,12 +11,14 @@ Está formada por un grupo de emprendedores unidos con un objetivo común: mejor
 La empresa cuenta con una sucursal general, donde se realiza la fabricación junto con el tratado con el cliente, y un depósito general, donde se almacena todos los productos fabricados y de allí se envía al cliente.
 
 Se busca el planteamiento de una solución basada en un sistema de ecommerce que pueda gestionar:
-•	Control de stock
+
+-Control de stock
 Llevar un control tanto en el stock de las materias primas existentes como de los productos en existencia fabricados.
-•	Compra
+
+-Compra
 Gestión de las compras de materias primas para la realización de productos. También incluye el manejo con proveedores.
-•	Venta y envió
+-Venta y envió
 Realización de las ventas basadas en reservas para su posterior producción. La venta constará en la aceptación de un prototipo que se le enviará al cliente, luego de eso se procederá a su fabricación.
  También se realizará la gestión del envió de los productos fabricados a sus respectivos clientes.
-•	Socios
+-Socios
 Manejar un sistema de socios los cuales tienes ciertos beneficios a la hora de comprar.
